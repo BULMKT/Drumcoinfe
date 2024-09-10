@@ -1,0 +1,32 @@
+.custom-button1{
+    border-radius: 5px;
+    height: 56px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.custom-button1{
+    border: 0px;
+    background:none;
+}
+.custom-button1 img{
+    width: 68px;
+}
+.custom-button1 span{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    transform: scale(0.8, 1);
+}
+
+@media screen and (max-height: 855px) {
+    .custom-button1{
+        height: 50px!important;
+        width: 46px!important;
+    }
+}

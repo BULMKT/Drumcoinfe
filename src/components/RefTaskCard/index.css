@@ -1,0 +1,35 @@
+.ref-task-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Helvetica;
+    background-color: #020921;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.ref-task-card>img:nth-child(1){
+    width: 46px;
+    margin-right: 23px;
+}
+
+.ref-task-card >div{
+    width: 81%;
+}
+
+.ref-task-card>div>div>img{
+    width: 22px;
+}
+
+.ref-task-card>div>div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 5px;
+    color: #b3b5bc;
+}

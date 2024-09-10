@@ -1,0 +1,39 @@
+
+.pop-up-div{
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.claim-pop-up{
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 192px;
+    padding: 10px 0px;
+    max-width: 363px;
+    justify-content: center;
+    align-items: center;
+}
+
+.claim-pop-up div{
+    color: white;
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.claim-pop-up div h2{
+    margin-top: 2px;
+    font-size: 22px;
+}
+
+.claim-pop-up h2{
+    transform: scale(0.7, 1);
+}

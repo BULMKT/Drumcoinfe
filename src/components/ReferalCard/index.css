@@ -1,0 +1,78 @@
+.referal-card{
+    width: 80%;
+    background-color: #020921;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.referal-card-topbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.referal-card-topbar h3{
+    color: white;
+}
+
+.referal-card-topbar span{
+    color: #ff9700;
+    margin-right: 5px;
+    transform: scale(0.8, 1);
+    -webkit-transform-origin-x: right;
+}
+
+.referal-card-topbar img{
+    width: 18px;
+}
+
+.referal-card-coins{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 20px; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.referal-card-coins img:nth-child(2){
+    width: 21px;
+    margin-right: 5px;
+}
+
+.referal-card-coins img:nth-child(1){
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.referal-card-coins span{
+    color: #b3b5bc;
+}
+
+.referal-card-progress{
+    width: 90%;
+    background-color: #282a32;
+    height: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.referal-card-progress div{
+    background-color: #fff000;
+    height: 90%;
+    border-radius: 15px;
+}

@@ -1,0 +1,318 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .user-info{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 46px;
+    justify-content: space-between;
+  }
+  .user-info span{
+    width: 84px;
+    height: 41px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    color: #FAE04C;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 6px;
+  }
+  .user-info p{
+    transform: scale(0.8, 1);
+  }
+  .balance-display img{
+    height: 30px;
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+  .balance-display span{
+    margin-left: 1px;
+    font-weight: 600;
+    font-family: Helvetica;
+  }
+  .balance-display{
+    margin-top: 24px;
+    margin-bottom: -2px;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .tap{
+    width: 12rem;
+    transition: width 1s, height 1s;
+    animation: BoxShadowAni 5.0s;
+  }
+
+  .tap:active{
+    width: 11rem;
+  }
+
+  .tap-div{
+    height: 12rem;
+    width: 100%;
+    margin-top: 7vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bronze-display{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .bronze-display img{
+    width: 24px;
+    /* margin-left: 29px; */
+    margin-right: 10px;
+  }
+
+  .bronze-display span{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .claim-image{
+    margin-top: 7vh;
+    width: 125px;
+  }
+
+  .energy-display{
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 4vh;
+  }
+  .energy-progress{
+    width: 100%;
+  }
+
+  .energy-display img{
+    width: 33px;
+    margin-right: 5px;
+  }
+
+  .energy-amount{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .energy-amount-number{
+    display: flex;
+    align-items: center;
+  }
+
+  .energy-amount span:nth-child(1){
+    font-size: 31px;
+    font-weight: 600;
+    transform: scale(0.8, 1);
+    margin-left: -11px;
+  }
+  .energy-amount span:nth-child(2){
+    font-size: 33px;
+    /* margin-left: -5px; */
+  }
+  .energy-amount span:nth-child(3){
+    font-size: 20px;
+    margin-top: 5px;
+    /* margin-left: -4px; */
+    transform: scale(0.8, 1);
+  }
+  .energy-progress{
+    border: 1px dotted  #D68E17;
+    height: 25px;
+    margin-top: 2vh;
+    border-radius: 5px;
+    background-color: #222844;
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+  }
+  .energy-progress div{
+    background-color: #FFD200;
+    height: 72%;
+    border-radius: 5px;
+  }
+
+  /* .claim-image{
+    cursor: pointer;
+  } */
+
+  .claim-image:hover{
+    /* box-shadow: #222844; */
+    cursor: pointer;
+  }
+
+  .claim-image:active{
+    /* border-radius: 20px;
+    box-shadow: rgba(255,218,102, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+  }
+
+  .tap{
+    cursor:grab;
+    border-radius: 100px;
+    position: absolute;
+  }
+
+  .gru .tap{
+    width: 12rem;
+  }
+
+  .tap:active{
+    /* border-radius: 50px; */
+    box-shadow: rgba(255,218,102, 0.4) 0px 0px 5px 5px, rgba(255,218,102, 0.3) 0px 0px 10px 10px, rgba(255,218,102, 0.2) 0px 0px 15px 15px, rgba(255,218,102, 0.1) 0px 0px 20px 20px, rgba(255,218,102, 0.05) 0px 0px 25px 25px;
+  }
+
+  .flying-text {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    animation: fly-up 1s forwards, fade-out 1s forwards;
+    pointer-events: none;
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  @keyframes fly-up {
+    0% {
+      transform: translate(0, 0) rotate(var(--rotate-angle));
+    }
+  
+    100% {
+      transform: translate(var(--x-offset), var(--y-offset)) rotate(var(--rotate-angle));
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 0.9;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .boost-state{
+    position: fixed;
+    top: 125px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boost-state img{
+    width: 35px;
+    margin-top: 20px;
+  }
+
+  .tap-bot-pop{
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    color: white;
+    margin-bottom: 150px;
+  }
+  .bot-effect-pop{
+    width: 80px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-image: url(../../assets/effect1.png);
+  }
+  .tap-bot-pop span{
+    width: 70%;
+  }
+  .tap-bot-pop h3, .tap-bot-pop h4{
+    transform: scale(0.6, 1);
+    -webkit-transform-origin-x: left;
+  }
+  .tap-bot-pop p{
+    transform: scale(0.8, 1);
+    -webkit-transform-origin-x: left;
+  }
+  .tap-bot-pop div span{
+    transform: scale(0.6, 1);
+    -webkit-transform-origin-x: left;
+    font-size: 12px;
+  }
+  .tap-bot-pop button{
+    border-radius: 24px;
+    font-size: 10px;
+    transform: scale(0.8, 1);
+    padding: 17px 9px;
+    background-image: url(../../assets/round.png);
+    background-size: 100% 100%;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+  .tap-bot-pop button h1{
+        transform: scale(0.8, 1);
+        font-size: 13px;
+  }
+  .tap-bot-pop>div {
+    padding: 10px;
+    max-height: 70px;
+    border: 1px solid white;
+    border-radius: 27px;
+    width: 90%;
+    background-image: url(../../assets/tapbot_back.png);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+    background-size: 100% 100%;
+  }
+
+  .bot-effect-pop img{
+    width: 50px;
+    height: 50px;
+  }
+
+@media screen and (max-height: 2600px) {
+  .tap{
+    width: 12rem;
+  }    
+  .tap-div, .claim-image{
+    margin-top: 4vh;
+  }
+  .claim-image{
+    width: 100px;
+  }
+  .energy-display{
+    margin-top: 2vh;
+  }
+  .energy-progress{
+    height: 14px;
+  }
+}

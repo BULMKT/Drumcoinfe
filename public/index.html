@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.39.2/css-doodle.min.js"></script>
+</head>
+<style>
+  #root {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: yellow
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  body {
+    background-color: #fafafb;
+  }
+
+  .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+</style>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+  <div id="root" style="background-image: url(&quot;./background.png&quot;);">
+  </div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+<script>
+  // Some random colors
+  const colors = ["#ffda66"];
+
+  const numBalls = 50;
+  const balls = [];
+
+  for (let i = 0; i < numBalls; i++) {
+    let ball = document.createElement("div");
+    ball.classList.add("ball");
+    ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+    ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+    ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+    ball.style.transform = `scale(${Math.random()})`;
+    ball.style.width = `0.2em`;
+    ball.style.height = ball.style.width;
+
+    balls.push(ball);
+    document.body.append(ball);
+  }
+
+  // Keyframes
+  balls.forEach((el, i, ra) => {
+    let to = {
+      x: Math.random() * (i % 2 === 0 ? -11 : 11),
+      y: Math.random() * 12
+    };
+
+    let anim = el.animate(
+      [
+        { transform: "translate(0, 0)" },
+        { transform: `translate(${to.x}rem, ${to.y}rem)` }
+      ],
+      {
+        duration: (Math.random() + 1) * 4000, // random duration
+        direction: "alternate",
+        fill: "both",
+        iterations: Infinity,
+        easing: "ease-in-out"
+      }
+    );
+  });
+</script>
+
+</html>

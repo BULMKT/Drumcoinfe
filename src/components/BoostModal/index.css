@@ -1,0 +1,23 @@
+.boost-modal{
+    width: 80vw;
+    height: 80px;
+    display: flex;
+    z-index: 2;
+    margin: auto;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boost-modal div{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boost-modal  button{
+    width: 100px;
+}
