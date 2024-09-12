@@ -72,7 +72,7 @@ const Referals = () =>{
                 <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
                 <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
                 <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <div style={{height:"50px"}}>
+                <div style={{height:"100px"}}>
                     &nbsp;
                 </div>
             </div>
