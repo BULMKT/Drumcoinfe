@@ -55,12 +55,28 @@ const Referals = () =>{
             <div className="my-referal">
                 <h2>My Referrals:</h2>
             </div>
-            {
-                info.friends?.map(friend=><ReferalCard title={friend.name} coins={friend.coins} plus={friend.rewardByReferal} progress={
-                    friend.league===0 ? Math.floor(100*friend.coins/leagues[friend.league]) : Math.floor(100*friend.coins/leagues[friend.league])}    
-                />)
-            }
-            <div style={{height:"150px"}}></div>
+            <div className="ref-task-list">
+                {
+                    info.friends?.map(friend=><ReferalCard title={friend.name} coins={friend.coins} plus={friend.rewardByReferal} progress={
+                        friend.league===0 ? Math.floor(100*friend.coins/leagues[friend.league]) : Math.floor(100*friend.coins/leagues[friend.league])}    
+                    />)
+                }
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
+                <div style={{height:"50px"}}>
+                    &nbsp;
+                </div>
+            </div>
+            {/* <div style={{height:"150px"}}></div> */}
             <Footer />
         </div>
     )
