@@ -240,7 +240,7 @@ const Boost = () =>{
         let lvl = userInfo.multiTapLevel;
         if(multiTapBoostInfos[lvl] === undefined) return;
         
-        if(multiTapBoostInfos[lvl].cost>userInfo.coins || lvl>league || lvl>=12){
+        if(multiTapBoostInfos[lvl].cost>userInfo.coins || lvl>=12){
             setIsMultiTapActived(false);   
             return;
         }
@@ -250,7 +250,7 @@ const Boost = () =>{
     useEffect(()=>{
         let lvl = userInfo.energyLimitLevel;
         if(energyLimitBoostInfos[lvl] === undefined) return;
-        if(energyLimitBoostInfos[lvl].cost>userInfo.coins || lvl>league || lvl>=14){
+        if(energyLimitBoostInfos[lvl].cost>userInfo.coins || lvl>=14){
             setIsEnergyLimitActived(false);
             return;
         }
@@ -260,7 +260,7 @@ const Boost = () =>{
     useEffect(()=>{
         let lvl = userInfo.rechargeSpeedLevel;
         if(rechargeSpeedBoostInfos[lvl] === undefined) return;
-        if(rechargeSpeedBoostInfos[lvl].cost>userInfo.coins || lvl>league || lvl>=5){
+        if(rechargeSpeedBoostInfos[lvl].cost>userInfo.coins || lvl>=5){
             setIsRechargSpeedActived(false);
             return;
         }
