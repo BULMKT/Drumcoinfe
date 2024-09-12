@@ -61,22 +61,8 @@ const Referals = () =>{
                         friend.league===0 ? Math.floor(100*friend.coins/leagues[friend.league]) : Math.floor(100*friend.coins/leagues[friend.league])}    
                     />)
                 }
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                <ReferalCard title={"Friend"} coins={125} plus={1500} progress={34} />
-                {/* <div style={{height:"100px"}}>
-                    &nbsp;
-                </div> */}
             </div>
-            {/* <div style={{height:"150px"}}></div> */}
+            <div style={{height:"150px"}}></div>
             <Footer />
         </div>
     )
