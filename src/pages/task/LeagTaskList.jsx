@@ -85,7 +85,7 @@ const LeagTaskList = ({setBalance}) =>{
                     return <LeagTaskCard id={id} taskId = {id} claim={handleClaimClick} title={task.title} img={task.img} bonus={task.bonus} progress={progress} clamable = {claimalble}/>
                 })
             }
-            <div style={{height:"100px"}}>
+            <div style={{height:"50px"}}>
                 &nbsp;
             </div>
         </div>
