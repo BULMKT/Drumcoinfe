@@ -64,7 +64,7 @@
 .special-task-list, .ref-task-list, .leag-task-list{
     width: 80%;
     margin-top: 10px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     height: 55vh;
     overflow: auto;
     scrollbar-width: 0px;
