@@ -7,7 +7,7 @@ import { tap } from "../../api/user";
 import LeagTaskCard from "../../components/LeagTaskCard";
 import Loader from "../../components/Loader";
 
-const leagues = [1000, 5000, 10000, 30000, 50000, 100000, 250000, 500000, 1000000, 5000000]
+const leagues = [30000, 80000, 150000, 300000, 400000, 600000, 800000, 1000000, 1500000]
 
 const LeagTaskList = ({setBalance}) =>{
 
@@ -85,9 +85,6 @@ const LeagTaskList = ({setBalance}) =>{
                     return <LeagTaskCard id={id} taskId = {id} claim={handleClaimClick} title={task.title} img={task.img} bonus={task.bonus} progress={progress} clamable = {claimalble}/>
                 })
             }
-            {/* <div style={{height:"50px"}}>
-                &nbsp;
-            </div> */}
         </div>
     )
 }
