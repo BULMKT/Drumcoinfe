@@ -82,7 +82,8 @@ const LeagTaskList = ({setBalance}) =>{
                     if(currentLeagId === task.lvl) progress = 100*tapCount/leagues[currentLeagId];
                     if(currentLeagId === task.lvl && tapCount >= leagues[currentLeagId]) claimalble = true;
                     if(progress>100) progress = 100;
-                    return <LeagTaskCard id={id} taskId = {id} claim={handleClaimClick} title={task.title} img={task.img} bonus={task.bonus} progress={progress} clamable = {claimalble}/>
+                    if(progress<100) return <LeagTaskCard id={id} taskId = {id} claim={handleClaimClick} title={task.title} img={task.img} bonus={task.bonus} progress={progress} clamable = {claimalble}/>
+                    return;
                 })
             }
         </div>

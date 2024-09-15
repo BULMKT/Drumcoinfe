@@ -71,7 +71,7 @@ const Stats = () =>{
                     </div>
                 </div>
                 <div>
-                    <p>Daily Users:</p>
+                    <p>Weekly Users:</p>
                     <div>
                         <h1>{formatNumber(info.dailyUsers)}</h1>
                     </div>

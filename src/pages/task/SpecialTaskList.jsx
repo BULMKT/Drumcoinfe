@@ -70,6 +70,7 @@ const SpecialTaskList = ({setBalance}) =>{
                 tasks.map((task, id)=>{
                     let status = 0;
                     if(doneList.includes(task._id)) status = 1;
+                    if(status === 1) return;
                     return <SpecialTaskCard title={task.title} id={id} bonus={task.bonus} status={status} visit={visitLink} />
                 })
             }

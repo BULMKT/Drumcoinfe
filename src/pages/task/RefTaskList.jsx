@@ -66,6 +66,7 @@ const RefTaskList = ({setBalance}) =>{
         <div className="ref-task-list">
             {
                 tasks?.map((task, id)=>{
+                    if(currentRefTaskId > id) return;
                     let status = 1;
                     if(currentRefTaskId === id && invNumber >= task.refNumber) status = 0;
                     return <RefTaskCard id={id} title = {task.title} bonus={task.bonus} status={status} claim={handleClaim}/>
