@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# DrumCoin Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Portfolio status:** Historical Telegram Mini App prototype. It is not actively maintained and is not presented as a current flagship or production service.
 
-## Available Scripts
+This repository contains the React frontend for an experimental tap-to-earn product built for the Telegram Mini App environment. It is retained as evidence of product exploration and hands-on frontend integration while related DrumCoin iterations are reviewed and consolidated.
 
-In the project directory, you can run:
+## What it demonstrates
 
-### `npm start`
+- React 18 application structure and route-based user flows
+- Telegram Mini App SDK integration
+- Supabase-backed client integration
+- Game-style screens for tapping, boosts, tasks, referrals, and statistics
+- Mobile-first interaction and Telegram lifecycle handling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Current limitations
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Historical prototype rather than a supported release
+- No maintained public deployment or production support commitment
+- Configuration and external services may be unavailable or outdated
+- Related DrumCoin repositories may overlap with this version
 
-### `npm test`
+## Run locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+Create React App also provides `npm test` and `npm run build`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Security and privacy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Do not commit credentials or production configuration. Use local environment variables and treat any historical third-party integration values as non-production until independently verified.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Portfolio context
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For current work and contact details, visit [ajahmed.com](https://ajahmed.com) or the [BULMKT GitHub profile](https://github.com/BULMKT).
